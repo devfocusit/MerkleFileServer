@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MerkleFileServer.Addon.AsClient\MerkleFileServer.Addon.AsClient.csproj" />
+    <ProjectReference Include="..\MerkleFileServer.Application\MerkleFileServer.Application.csproj" />
+    <ProjectReference Include="..\MerkleFileServer.Domain\MerkleFileServer.Domain.csproj" />
+    <ProjectReference Include="..\MerkleFileServer.Infrastructure\MerkleFileServer.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="icons_rgb_circle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
